@@ -51,7 +51,7 @@ export default function DetailProduct() {
                                 </tr>
                             )
                         })
-                    ) : ("tins")}
+                    ) : ("")}
 
                 </tbody>
             </table >

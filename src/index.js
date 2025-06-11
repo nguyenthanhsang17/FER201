@@ -9,6 +9,10 @@ import Login from './Pages/Login';
 import ListProduct from './Pages/listProduct';
 import Layout from './Components/layout';
 import DetailProduct from './Pages/DetailProduct';
+import CreateProduct from './Pages/CreateProduct';
+import UpdateProduct from './Pages/UpdateProduct';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -20,6 +24,8 @@ root.render(
         <Route path="/app" element={<Layout><App /></Layout>} />
         <Route path="/product" element={<Layout>< ListProduct /></Layout>} />
          <Route path="/detail/:id" element={<Layout>< DetailProduct /></Layout>} />
+         <Route path="/create" element={<Layout>< CreateProduct /></Layout>} />
+         <Route path="/update/:id" element={<Layout>< UpdateProduct /></Layout>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
